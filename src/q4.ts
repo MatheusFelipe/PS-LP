@@ -1,5 +1,5 @@
-const nOrderGrayCode = n => {
-  if (typeof n !== 'number' || n <= 0) return null;
+const nOrderGrayCode = (n: number): string => {
+  if (n <= 0) return '';
   let gray = ['0', '1'];
   for (let i = 1; i < n; i += 1) {
     const simmetric = [...gray].reverse();
@@ -8,4 +8,4 @@ const nOrderGrayCode = n => {
   return gray.join(', ');
 };
 
-module.exports = { nOrderGrayCode };
+export default { nOrderGrayCode };

@@ -1,5 +1,4 @@
-const minContiguousSum = arr => {
-  if (!Array.isArray(arr)) return null;
+const minContiguousSum = (arr: number[]): number[] => {
   let [start, end, j, min, minNow] = [0, 0, 0, 0, 0];
   for (let [i, n] = [0, arr.length]; i < n; i += 1) {
     minNow += arr[i];
@@ -17,4 +16,4 @@ const minContiguousSum = arr => {
   return arr.slice(start, end + 1);
 };
 
-module.exports = { minContiguousSum };
+export default { minContiguousSum };

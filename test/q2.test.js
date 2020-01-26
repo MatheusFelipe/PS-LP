@@ -1,14 +1,8 @@
-const { isAnagramWithObj, isAnagramWithArray } = require('./q2');
+const {
+  default: { isAnagramWithObj, isAnagramWithArray },
+} = require('../lib/q2');
 
 describe('isAnagram', () => {
-  it('should return null with invalid parameter', () => {
-    expect.assertions(4);
-    expect(isAnagramWithObj(1, 2)).toBeNull();
-    expect(isAnagramWithObj(null, undefined)).toBeNull();
-    expect(isAnagramWithArray(null, '')).toBeNull();
-    expect(isAnagramWithArray('onestring')).toBeNull();
-  });
-
   it('should return true if is anagram', () => {
     expect.assertions(2);
     expect(isAnagramWithObj('autor', 'outra')).toBe(true);

@@ -1,14 +1,8 @@
-const { minContiguousSum } = require('./q3');
+const {
+  default: { minContiguousSum },
+} = require('../lib/q3');
 
 describe('minContiguousSum', () => {
-  it('should return null with invalid parameter', () => {
-    expect.assertions(4);
-    expect(minContiguousSum(1)).toBeNull();
-    expect(minContiguousSum(null)).toBeNull();
-    expect(minContiguousSum(undefined)).toBeNull();
-    expect(minContiguousSum('string')).toBeNull();
-  });
-
   it('should return first contiguous subarray with minimum sum, sum < 0', () => {
     expect.assertions(3);
     const arrs = [
