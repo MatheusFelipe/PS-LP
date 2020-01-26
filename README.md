@@ -13,4 +13,4 @@ Dado um array de inteiros, buscar o subarray contíguo de menor soma não-positi
 ## q4
 Dado a ordem de bits, gerar o Código de Gray para a order de bits indicada
 
-Em cada pasta se encontra uma resolução sugerida em `.js`, além da rotina `npm test`, que irá rodar o Jest com alguns testes pré-determinados
+Em `src` se encontra as implementaçòes sugeridas em typescript, compiladas para `lib` com o comando `npm run build` e testes em `test` com o comando `npm test`
